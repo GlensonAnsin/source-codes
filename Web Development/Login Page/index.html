@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingCraze - Login</title>
+
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!--FAVICON-->
+    <link rel="icon" href="assets/images/GamingCraze Logo.png">
+
+    <!--BOXICONS CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="login-interface">
+        <div id="gamingcraze-label">
+            <p class="p1">GAMING</p>
+            <p class="p2">CRAZE</p>
+        </div>
+        <div id="login-section">
+            <img class="gamingcraze-logo" src="assets/images/GamingCraze Logo.png" alt="logo"><br>
+            <label class="login-lbl">Log in</label><br>
+            <form action="">
+            <input type="text" id="username" name="username" placeholder="Username"><br>
+            <input type="password" id="password" name="password" placeholder="Password"><br>
+            <div class="toggle-pass-visibility">
+                <input type="checkbox" id="show-pass" onclick="viewPass()">
+                <label>Show password</label>
+            </div>
+            <a href=""><input type="submit" id="submit-btn" value="LOG IN"></a><br>
+            <div id="other-login-opt">
+                <label class="login-with" for="">Log in with</label>
+                <div class="icons">
+                    <a href=""><i><img class="google-icon" src="assets/images/Google Icon.png"></i></a>
+                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                    <a href=""><i class='bx bxl-github'></i></a></a>
+                </div>
+            </div><br>
+            <div class="sign-up">
+                <p class="no-account">No account?</p><a href="">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    function viewPass() {
+        var pass = document.getElementById("password");
+        if (pass.type === "password") {
+            pass.type = "text";
+        } else {
+            pass.type = "password";
+        }
+    }
+</script>
+
+</body>
+</html>

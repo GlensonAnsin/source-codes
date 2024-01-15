@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+}
+p{
+    font-size: 8px;
+    line-height: 8px;
+    background: url(../images/yang2.png);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(225, 225, 225, 0.07);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: top;
+    letter-spacing: 0.1px;
+}
